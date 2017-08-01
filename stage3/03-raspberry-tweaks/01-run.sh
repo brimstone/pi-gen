@@ -9,7 +9,7 @@ install -m 644 files/cmdline.txt "${ROOTFS_DIR}/boot/"
 # modify config.txt to support overlays
 install -m 644 files/config.txt "${ROOTFS_DIR}/boot/"
 
-on_chroot sh -e - << \EOF
+on_chroot << \EOF
 systemctl enable getty@ttyGS0.service
 EOF
 

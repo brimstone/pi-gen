@@ -1,1 +1,1 @@
--docker
+IMG_SUFFIX="-docker"
