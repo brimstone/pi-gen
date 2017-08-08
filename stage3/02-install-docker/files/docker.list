@@ -1,1 +1,1 @@
-deb [arch=armhf] https://apt.dockerproject.org/repo raspbian-jessie main
+deb [arch=armhf] https://download.docker.com/linux/raspbian jessie test
