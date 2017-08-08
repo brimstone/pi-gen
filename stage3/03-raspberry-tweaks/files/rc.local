@@ -2,6 +2,8 @@
 
 if grep -q 'Revision.*900093' /proc/cpuinfo; then
 	ifup usb0
+elif grep -q 'Revision.*9000c1' /proc/cpuinfo; then
+	ifup usb0
 else
 	ifup br-usb
 	if grep -q dwc2 /boot/config.txt; then
